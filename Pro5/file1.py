@@ -19,18 +19,18 @@ B=A[:]
 print(B)
 A[0]="Orange"
 print(A)
-for i , x in enumerate(['A','B','C','D']):
+
 
 import matplotlib.pyplot as plt
 
- class circle(object):
-    def_init_(self,radius,color):  
-        self.radius = radius;
-        self.color = color;
-    def add.radius(self,r):
+class circle(object):
+    def  _init_(self,radius = 3,color='blue'):  
+        self.radius = radius
+        self.color = color
+    def add_radius(self,r):
         self.radius =self.radius + r
-           return(self.radius)
+        return(self.radius)
     def draw_circle(self):
         plt.gca().add_patch(plt.Circle((0, 0), radius=self.radius, fc=self.color))
-        pltplt.axis('scaled')
+        plt.axis('scaled')
         plt.show()         
